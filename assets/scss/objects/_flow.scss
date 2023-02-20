@@ -1,2 +1,160 @@
 @use "../foundation/global" as *;
 
+.flow {
+    background-color: $theme02_blue;
+
+
+    &-inner {
+
+        &__title {
+
+        }
+
+        &__subtitle {
+            margin-top: 34px;
+        }
+    }
+
+    &-items {
+        margin-top: 72px;
+        width: 100%;
+        height: auto;
+
+        @include mq("sp") {
+            margin-top: 32px;
+        }
+    }
+
+    &-item {
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: $pure_white;
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        @include mq("sp") {
+            max-width: 335px;
+            margin: 0 auto;
+
+            &:not(:first-child) {
+                margin-top: 18px;
+            }
+        }
+
+        &__headArea {
+            width: 100%;
+            height: 60px;
+            background-color: $theme01_blue;
+            display: grid;
+            place-items: center;
+        }
+        &__headText {
+            color: $pure_white;
+            font-family: $Roboto;
+            font-weight: bold;
+            font-size: 18px;
+
+            &--num {
+                font-size: 24px;
+            }
+        }
+
+        &__container {
+            padding-top: 40px;
+            padding-bottom: 60px;
+
+            @include mq("sp") {
+                padding: 30px 20px 40px 20px;
+            }
+        }
+
+        &__title {
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+
+            @include mq("sp") {
+                font-size: 16px;
+            }
+        }
+
+        &__icon {
+            display: block;
+            margin: 0 auto;
+            height: auto;
+        }
+        &__icon01 {
+            width: 98px;
+            margin-top: 26px;
+
+            @include mq("sp") {
+                margin-top: 20px;
+            }
+        }
+        &__icon02 {
+            width: 107px;
+            margin-top: 16px;
+
+            @include mq("sp") {
+                margin-top: 15px;
+            }
+        }
+        &__icon03 {
+            width: 210px;
+            margin-top: 21px;
+
+            @include mq("sp") {
+                margin-top: 13px;
+            }
+        }
+        &__icon04 {
+            width: 91px;
+            margin-top: 44px;
+
+            @include mq("sp") {
+                margin-top: 22px;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 30px;
+            text-align: center;
+
+            @include mq("sp") {
+                font-size: 12px;
+                text-align: left;
+            }
+        }
+        &__textLink {
+            color: $theme05_blue;
+            text-decoration: underline;   
+        }
+
+        &__noteArea {
+            width: 77.5%;
+            margin: 54px auto 0;
+
+            @include mq("sp") {
+                width: 100%;
+            }
+        }
+        &__note {
+            font-size: 14px;
+            font-weight: 500;
+
+            @include mq("sp") {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &-btn {
+        margin: 50px auto 0;
+    }
+
+}
