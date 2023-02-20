@@ -1,0 +1,216 @@
+@use "../foundation/global" as *;
+
+.point {
+
+    &-inner {
+
+        &__title {
+
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+        }
+    }
+
+    &-ul {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq("sp") {
+            display: block;
+            margin-top: 26px;
+        }
+    }
+
+    &-list {
+        background-color: $theme03_blue;
+        width: 32%;
+        height: 213px;
+        border-radius: 16px;
+
+        @include mq("sp") {
+            width: 100%;
+            max-width: 335px;
+            height: 202px;
+            margin: 0 auto;
+
+            &:not(:first-child) {
+                height: 226px;
+                margin-top: 10px;
+            }
+        }
+
+        &__iconArea {
+            width: 100%;
+            height: 53.5%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            @include mq("sp") {
+                height: 120px;
+            }
+        }
+        &__icon {
+           vertical-align: bottom;
+           height: auto;
+        }
+        &__icon01 {
+            width: 82px;
+
+            @include mq("sp") {
+                width: 86px;
+            }
+        }
+        &__icon02 {
+            width: 189px;
+
+            @include mq("sp") {
+                width: 197px;
+            }
+        }
+        &__icon03 {
+            width: 80px;
+
+            @include mq("sp") {
+                width: 84px;
+            }
+        }
+
+        &__textArea {
+            height: calc(100% - 120px);
+            display: grid;
+            place-items: center;
+            text-align: center;
+            
+            @include mq("sp") {
+                height: calc(100% - 59.4%);
+            }
+        }
+        &__text {
+            font-weight: bold;
+        }
+    }
+
+    &-container {
+        width: 100%;
+        height: auto;
+        margin-top: 47px;
+        padding-top: 31px;
+        padding-bottom: 50px;
+        background-color: $yellow_light;
+        border-radius: 16px;
+        position: relative;
+
+        @include mq("sp") {
+            padding-top: 35px;
+            padding-bottom: 33px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 32px;
+            height: 34px;
+            position: absolute;
+            top: -17px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url(/assets/images/point_arrow.png) no-repeat center center / cover;
+        }
+
+        &__main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include mq("sp") {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            width: 250px;
+            height: auto;
+
+            @include mq("sp") {
+                width: 188px;
+            }
+        }
+
+        &__price {
+            font-weight: 900;
+            font-size: 41px;
+            color: $theme05_blue;
+
+            @include mq("sp") {
+                font-size: 29px;
+                line-height: 39px;
+            }
+            
+            &--num {
+                display: block;
+                font-family: "Helvetica";
+                font-size: 123px;
+                font-weight: bold;
+                line-height: 1;
+
+                @include mq("sp") {
+                    font-size: 87px;
+                }
+            }
+
+            &--yen {
+                padding-left: 5px;
+                font-size: 35px;
+                line-height: 1;
+                font-weight: 900;
+                writing-mode: vertical-rl;
+                letter-spacing: initial;
+
+                @include mq("sp") {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        &__text {
+            margin-top: 20px;
+            font-weight: bold;
+            line-height: 24px;
+            text-align: center;
+
+            @include mq("sp") {
+                max-width: 280px;
+                margin: 17px auto 0;
+                text-align: left;
+            }
+        }
+    }
+
+    &-btn {
+        margin: 50px auto 0;
+        
+        @include mq("sp") {
+            margin: 30px auto 0;
+        }
+    }
+
+    &-bottom {
+        margin-top: 33px;
+        text-align: center;
+      
+        &__text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &__textLink {
+            color: $theme05_blue;
+            text-decoration: underline;
+        }
+    }
+}
