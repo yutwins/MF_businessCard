@@ -1,0 +1,69 @@
+@use "../foundation/global" as *;
+
+.footer {
+    background-color: $theme04_blue;
+
+    &-inner {
+        padding: 42px 0;
+
+        @include mq("sp") {
+            padding-top: 28px;
+            padding-bottom: 16px;
+        }
+    }
+
+    &-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        @include mq("sp") {
+            flex-wrap: wrap;
+            gap: 0 15px;
+        }
+    }
+
+    &-list {
+        position: relative;
+
+        &:not(:first-child) {
+            
+            &::before {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 15px;
+                background-color: $pure_white;
+                position: absolute;
+                top: 55%;
+                left: -7px;
+                transform: translateY(-50%);
+            }
+            
+        }
+        
+        &__item {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: $pure_white;
+
+            @include mq("sp") {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &-copyright {
+        margin-top: 17px;
+        font-size: 12px;
+        font-weight: 500;
+        color: $pure_white;
+        text-align: center;
+
+        @include mq("sp") {
+            font-size: 10px;
+        }
+    }
+}

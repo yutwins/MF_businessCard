@@ -118,6 +118,7 @@ $breakpoints: (
 
 .cta-btn {
     width: 346px;
+    max-width: 100%;
     height: 54px;
     border-radius: 32px;
     
@@ -147,7 +148,7 @@ $breakpoints: (
 
         &::before,
         &::after {
-            right: -50px;
+            right: -27.7%;
         }
         &::before {
             top: 12px;
@@ -181,7 +182,7 @@ $breakpoints: (
     }
     
     &::before {
-        width: 74px;
+        width: 100%;
         top: -6px;
         left: 6px;
         border-radius: 20px 0 0 20px;

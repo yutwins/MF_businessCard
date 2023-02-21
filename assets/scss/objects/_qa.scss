@@ -1,0 +1,84 @@
+@use "../foundation/global" as *;
+
+.qa {
+    background-color: $theme03_blue;
+
+    &-inner {
+
+    }
+
+    &-items {
+        margin-top: 50px;
+
+        @include mq("sp") {
+            margin-top: 29px;
+        }
+    }
+
+    &-item {
+
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+
+        &__q {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background-color: $pure_white;
+            padding-left: 17px;
+
+            @include mq("sp") {
+                height: auto;
+                padding: 20px 0 20px 10px;
+            }
+        }
+        &__qText {
+            padding-left: 40px;
+            font-weight: bold;
+            line-height: 26px;
+            position: relative;
+            color: $theme04_blue;
+
+            @include mq("sp") {
+                padding-left: 31px;
+            }
+        }
+        &__qTag {
+            font-size: 24px;
+            font-weight: bold;
+            color: $theme06_blue;
+            position: absolute;
+            top: -3px;
+            left: 0;
+        }
+        
+        &__a {
+            padding-left: 17px;
+            padding-top: 17px;
+        }
+        &__aText {
+            padding-left: 40px;
+            line-height: 26px;
+            position: relative;
+            color: $theme04_blue;
+
+            @include mq("sp") {
+                padding-left: 31px;
+            }
+        }
+        &__aTag {
+            font-size: 24px;
+            font-weight: bold;
+            color: $pure_yellow;
+            position: absolute;
+            top: -3px;
+            left: 0;
+        }
+        &__aLink {
+            color: $theme06_blue;
+            text-decoration: underline;
+        }
+    }
+}

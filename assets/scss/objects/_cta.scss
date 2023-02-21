@@ -1,0 +1,24 @@
+@use "../foundation/global" as *;
+
+.cta {
+    background-color: $font_base;
+    padding: 87px 0;
+    
+    @include mq("sp") {
+        padding: 56px 0;
+    }
+    
+    
+    &-inner {
+        &__title {
+            color: $pure_white;
+        }
+    }
+
+    &-section {
+
+        &__btn {
+            margin: 29px auto 0;
+        }
+    }
+}

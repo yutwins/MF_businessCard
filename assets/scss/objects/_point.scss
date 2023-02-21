@@ -92,6 +92,11 @@
         }
         &__text {
             font-weight: bold;
+            
+            &--min {
+                vertical-align: super;
+                font-size: 10px;
+            }
         }
     }
 
