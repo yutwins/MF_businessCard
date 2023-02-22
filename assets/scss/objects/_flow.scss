@@ -6,12 +6,18 @@
 
     &-inner {
 
-        &__title {
-
-        }
-
         &__subtitle {
             margin-top: 34px;
+        }
+
+        &__note {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+
+            @include mq("sp") {
+                font-size: 13px;
+            }
         }
     }
 
@@ -150,6 +156,10 @@
             @include mq("sp") {
                 font-size: 12px;
             }
+        }
+        &__noteLink {
+            color: $theme06_blue;
+            text-decoration: underline;
         }
     }
 

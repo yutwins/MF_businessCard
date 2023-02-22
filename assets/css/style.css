@@ -363,6 +363,7 @@ p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 14px;
 }
 @media (max-width: 767px) {
   .fv-container {
@@ -376,6 +377,19 @@ p {
 @media (max-width: 767px) {
   .fv-textArea {
     width: 100%;
+  }
+}
+.fv-textArea__img {
+  display: block;
+  width: 100%;
+  max-width: 448px;
+  height: auto;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .fv-textArea__img {
+    max-width: 317px;
+    margin: 0 auto;
   }
 }
 .fv-textArea__headArea {
@@ -731,6 +745,17 @@ p {
   vertical-align: super;
   font-size: 10px;
 }
+@media (max-width: 767px) {
+  .point-note {
+    max-width: 335px;
+    margin: 0 auto;
+  }
+}
+.point-note__text {
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
 .point-container {
   width: 100%;
   height: auto;
@@ -865,6 +890,16 @@ p {
 }
 .flow-inner__subtitle {
   margin-top: 34px;
+}
+.flow-inner__note {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .flow-inner__note {
+    font-size: 13px;
+  }
 }
 .flow-items {
   margin-top: 72px;
@@ -1003,6 +1038,10 @@ p {
   .flow-item__note {
     font-size: 12px;
   }
+}
+.flow-item__noteLink {
+  color: #3171CA;
+  text-decoration: underline;
 }
 .flow-btn {
   margin: 50px auto 0;

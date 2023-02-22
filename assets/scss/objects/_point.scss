@@ -4,10 +4,6 @@
 
     &-inner {
 
-        &__title {
-
-        }
-
         &__subtitle {
             margin-top: 20px;
         }
@@ -97,6 +93,20 @@
                 vertical-align: super;
                 font-size: 10px;
             }
+        }
+    }
+
+    &-note {
+        
+        @include mq("sp") {
+            max-width: 335px;
+            margin: 0 auto;
+        }
+
+        &__text {
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: 500;
         }
     }
 
